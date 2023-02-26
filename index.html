@@ -40,7 +40,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/user.JPG" heigth="400px" />
+            <img src="images/user.png" heigth="400px" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
@@ -122,18 +122,7 @@
       }
 
     </script>
-    <script>
-        const scriptURL = 'https://script.google.com/macros/s/AKfycbyyQ1ChMpRnKnmquZe-bdWfpJHrFKoHG88OO2A32luWzu6vymTbJ1yiG3mJH_OY7pE8/exec'
-        const form = document.forms['submit-to-google-sheet']
-      
-        form.addEventListener('submit', e => {
-          e.preventDefault()
-          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-            .then(response => console.log('Success!', response))
-            .catch(error => console.error('Error!', error.message))
-        })
-      </script>
-
+    
     <div id="services">
       <div class="container">
         <h1 class="sub-title">My services</h1>
@@ -174,7 +163,7 @@
             <img src="images/work-1.JPG" />
             <div class="layer">
               <h3>Web-apps and games</h3>
-              <p>Involves all the web based apps and games I have developed.</p>
+              <p>Involves all the web based apps and games I have dev eloped.</p>
               <a href="#"><i class="fa-solid fa-link"></i></a>
             </div>
           </div>
@@ -230,7 +219,7 @@
               <input type="text" name="Name" placeholder="Your Name" required />
               <input
                 type="email"
-                name="email"
+                name="Email"
                 placeholder="Your Email"
                 required
               />
@@ -248,5 +237,17 @@
         <p>Copyright 	&#169 Amar.Made with <i class="fa-solid fa-heart"></i></p>
       </div>
     </div>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyyQ1ChMpRnKnmquZe-bdWfpJHrFKoHG88OO2A32luWzu6vymTbJ1yiG3mJH_OY7pE8/exec'
+        const form = document.forms['submit-to-google-sheet']
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => console.log('Success!', response))
+            .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+
   </body>
 </html>
