@@ -15,14 +15,18 @@
     <div id="header">
       <div class="container">
         <nav>
-          <img src="images/logo.JPG" class="logo" />
-          <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Portflio</a></li>
-            <li><a href="#">Contact</a></li>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu">
+              
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portflio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
           </ul>
+          
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
         </nav>
         <div class="header-text">
           <p>Software Developer</p>
@@ -35,7 +39,7 @@
       <div class="container">
         <div class="row">
           <div class="about-col-1">
-            <img src="images/user.JPG" heigth="400px" />
+            <img src="images/user.png" heigth="400px" />
           </div>
           <div class="about-col-2">
             <h1 class="sub-title">About me</h1>
@@ -102,6 +106,17 @@
         event.currentTarget.classList.add("active-link");
         document.getElementById(tabname).classList.add("active-tab");
       }
+    </script>
+    <script>
+      var sidemeu=document.getElementById("sidemenu");
+      function openmenu(){
+        sidemeu.style.right="0";
+
+      }
+      function closemenu(){
+        sidemeu.style.right="-200px";
+      }
+
     </script>
 
     <div id="services">
@@ -189,8 +204,12 @@
               <a href="https://instagram.com/_am4rr._?igshid=YmMyMTA2M2Y="
                 ><i class="fa-brands fa-instagram"></i
               ></a>
-              <a href="https://www.linkedin.com/in/amar-deep-85618821a"><i class="fa-brands fa-linkedin-in"></i></a>
-              <a href="https://github.com/Amar033"><i class="fa-brands fa-github"></i></a>
+              <a href="https://www.linkedin.com/in/amar-deep-85618821a"
+                ><i class="fa-brands fa-linkedin-in"></i
+              ></a>
+              <a href="https://github.com/Amar033"
+                ><i class="fa-brands fa-github"></i
+              ></a>
             </div>
             <a href="images/myCv.pdf" download class="btn btn2">Download CV</a>
           </div>
@@ -208,10 +227,13 @@
                 rows="6"
                 placeholder="Your Message"
               ></textarea>
-              <button type="Submit">Submit</button>
+              <button type="Submit" class="btn btn2">Submit</button>
             </form>
           </div>
         </div>
+      </div>
+      <div class="copyright">
+        <p>Copyright 	&#169 Amar.Made with <i class="fa-solid fa-heart"></i></p>
       </div>
     </div>
   </body>
