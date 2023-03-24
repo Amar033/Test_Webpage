@@ -100,6 +100,7 @@ nav ul li a:hover::after {
   color: #fff;
 }
 .tab-titles {
+  color: #f2aa4cff;
   display: flex;
   margin: 20px 0 40px;
 }
